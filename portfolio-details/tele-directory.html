@@ -1,59 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tele Directory - Portfolio Details</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom Dark Background -->
+  <style>
+    body {
+      background-color: #0d1b2a;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    h3, h4, h5 {
+      color: #ffffff;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .portfolio-info ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .portfolio-info ul li {
+      margin-bottom: 10px;
+    }
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+    }
+    .list-unstyled li::before {
+      content: "• ";
+      color: #ff4a57;
+      font-weight: bold;
+    }
+    .rounded {
+      border-radius: 12px;
+    }
+    .shadow {
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+    a {
+      color: #4dd0e1;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #ffffff;
+    }
+  </style>
+</head>
 
-<!-- tele-directory.html -->
-<section id="portfolio-details" class="portfolio-details">
-  <div class="container">
-    <div class="row gy-4">
-      
-      <!-- Left Side Image -->
-      <div class="col-lg-8">
-        <div class="portfolio-details-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide">
-              <img src="assets/img/tele-directory-preview.png" alt="Tele Directory Screenshot">
-            </div>
-          </div>
+<body>
+
+  <!-- Section Start -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        
+        <!-- Left: Project Image -->
+        <div class="col-lg-6 mb-4">
+          <img src="assets/img/tele-directory-preview.png" alt="Tele Directory Screenshot" class="img-fluid rounded shadow">
         </div>
-      </div>
 
-      <!-- Right Side Project Info -->
-      <div class="col-lg-4">
-        <div class="portfolio-info">
-          <h3>Project Information</h3>
-          <ul>
-            <li><strong>Category</strong>: Internal Web Application</li>
-            <li><strong>Client</strong>: Rasapoorna Foods Pvt Ltd</li>
-            <li><strong>Project date</strong>: April 2024</li>
-            <li><strong>Project URL</strong>: <a href="#">Internal Only</a></li>
+        <!-- Right: Project Details -->
+        <div class="col-lg-6">
+          <h3 class="mb-3">Tele Directory</h3>
+          <p>
+            Tele Directory is a responsive internal web app that allows HR and team members to manage and access contact info such as names, numbers, emails, and designations.
+          </p>
+
+          <h5 class="mt-4">📌 Project Information</h5>
+          <ul class="list-unstyled">
+            <li><strong>Category:</strong> Internal Web Application</li>
+            <li><strong>Client:</strong> Rasapoorna Foods Pvt Ltd</li>
+            <li><strong>Project date:</strong> April 2024</li>
+            <li><strong>Project URL:</strong> Internal Only</li>
+          </ul>
+
+          <h5 class="mt-4">🔑 Key Features</h5>
+          <ul class="list-unstyled">
+            <li>View contacts in table/card layout</li>
+            <li>Real-time search using JavaScript</li>
+            <li>Add new contacts via Bootstrap modal</li>
+            <li>Delete contacts dynamically</li>
+            <li>Responsive on all devices</li>
+          </ul>
+
+          <h5 class="mt-4">🛠️ My Responsibilities</h5>
+          <ul class="list-unstyled">
+            <li>UI design using HTML5, CSS3, Bootstrap</li>
+            <li>JavaScript for form validation and dynamic actions</li>
+            <li>Responsive layout and smooth interactivity</li>
+          </ul>
+
+          <h5 class="mt-4">✅ Outcome</h5>
+          <ul class="list-unstyled">
+            <li>Boosted internal team communication</li>
+            <li>Reduced manual Excel/lookup work</li>
+            <li>Improved JS and Bootstrap development skills</li>
           </ul>
         </div>
       </div>
     </div>
+  </section>
+  <!-- Section End -->
 
-    <!-- Full Description -->
-    <div class="portfolio-description mt-4">
-      <h2>Tele Directory</h2>
-      <p>
-        Tele Directory is a responsive internal web app that allows HR and team members to manage and access contact info such as names, numbers, emails, and designations.
-      </p>
-      <h4>🔑 Key Features</h4>
-      <ul>
-        <li>View all contacts in table/card layout</li>
-        <li>Search contacts using JavaScript filters</li>
-        <li>Add/Delete contact via Bootstrap modals</li>
-        <li>Responsive on mobile and desktop</li>
-      </ul>
-      <h4>🛠️ My Responsibilities</h4>
-      <ul>
-        <li>Designed UI using HTML5, CSS3, and Bootstrap</li>
-        <li>Wrote JavaScript for dynamic features and validation</li>
-        <li>Improved UX using real-time DOM updates</li>
-      </ul>
-      <h4>✅ Outcome</h4>
-      <ul>
-        <li>Boosted internal team communication</li>
-        <li>Reduced manual effort for contact lookup</li>
-        <li>Improved JS and responsive design skills</li>
-      </ul>
-    </div>
-  </div>
-</section>
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
