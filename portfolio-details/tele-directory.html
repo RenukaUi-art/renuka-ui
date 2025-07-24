@@ -3,17 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Tele Directory - DevFolio</title>
+  <title>Portfolio Details - DevFolio</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
-  <!-- Bootstrap CSS (CDN) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Internal CSS -->
   <style>
     body {
       font-family: "Open Sans", sans-serif;
@@ -32,10 +27,7 @@
       text-decoration: underline;
     }
 
-    h1,
-    h2,
-    h3,
-    h4 {
+    h1, h2, h3, h4 {
       font-weight: 700;
       color: #1e1e1e;
     }
@@ -70,12 +62,7 @@
       padding: 20px 0;
     }
 
-    .breadcrumbs h2 {
-      font-size: 24px;
-    }
-
-    .portfolio-details,
-    #tele-directory {
+    .portfolio-details {
       padding: 40px 0;
     }
 
@@ -99,6 +86,29 @@
       padding: 5px 0;
     }
 
+    .portfolio-description {
+      margin-top: 20px;
+    }
+
+    .testimonial-item {
+      background: #f9f9f9;
+      padding: 20px;
+      border-left: 4px solid #0078ff;
+      margin-top: 20px;
+    }
+
+    .testimonial-item p {
+      font-style: italic;
+      color: #555;
+    }
+
+    .testimonial-item img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
+
     footer#footer {
       background: #0078ff;
       color: #fff;
@@ -107,13 +117,9 @@
       font-size: 14px;
     }
 
-    footer a {
-      color: #fff;
-    }
-
-    .table th {
-      background: #0078ff;
-      color: #fff;
+    .carousel-inner img {
+      width: 100%;
+      border-radius: 8px;
     }
 
     .btn-primary {
@@ -149,60 +155,91 @@
   <section class="breadcrumbs mt-5">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
-        <h2>Tele Directory</h2>
+        <h2>Portfolio Details</h2>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Tele Directory</li>
+          <li class="breadcrumb-item active">Portfolio Details</li>
         </ol>
       </div>
     </div>
   </section>
 
-  <!-- ======= Tele Directory Section ======= -->
-  <section id="tele-directory" class="portfolio-details">
+  <!-- ======= Portfolio Details Section ======= -->
+  <section id="portfolio-details" class="portfolio-details">
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-8">
-          <h3>Employee Contact Information</h3>
-          <div class="table-responsive">
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Department</th>
-                  <th>Email</th>
-                  <th>Phone</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Renuka Mandapalli</td>
-                  <td>Front-end</td>
-                  <td>renuka@example.com</td>
-                  <td>9876543210</td>
-                </tr>
-                <tr>
-                  <td>Rahul Mehta</td>
-                  <td>Back-end</td>
-                  <td>rahul@example.com</td>
-                  <td>9123456780</td>
-                </tr>
-                <tr>
-                  <td>Sneha Reddy</td>
-                  <td>HR</td>
-                  <td>sneha@example.com</td>
-                  <td>9988776655</td>
-                </tr>
-              </tbody>
-            </table>
+          <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/img/portfolio/mobile-ui.jpg" alt="Portfolio Image">
+              </div>
+              <!-- Add more carousel items if needed -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+          <div class="portfolio-description">
+            <h3>This is an example of portfolio details</h3>
+            <p>
+              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia
+              quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem
+              officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim
+              cum deserunt eius.
+            </p>
+            <p>
+              Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum
+              nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque
+              necessitatibus molestiae laboriosam.
+            </p>
+
+            <div class="testimonial-item d-flex align-items-center">
+              <img src="assets/img/testimonials/testimonial-2.jpg" alt="Sara Wilson">
+              <div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum
+                  eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <strong>Sara Wilson</strong>, Designer
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="col-lg-4">
           <div class="portfolio-info">
-            <h3>Directory Information</h3>
+            <h3>Project information</h3>
             <ul>
-              <li><strong>Tool Name</strong>: Tele Directory</li>
-              <li><strong>Usage</strong>: Internal Employee Contacts</li>
-              <li><strong>Maintained By</strong>: HR Department</li>
-              <li><strong>Last Updated</st
+              <li><strong>Category</strong>: Web design</li>
+              <li><strong>Client</strong>: ASU Company</li>
+              <li><strong>Project date</strong>: 01 March, 2020</li>
+              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+            </ul>
+            <a href="#" class="btn btn-primary mt-3">Visit Website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      &copy; Copyright <strong>DevFolio</strong>. All Rights Reserved
+      <br>
+      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
