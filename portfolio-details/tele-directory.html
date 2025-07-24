@@ -3,26 +3,127 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio Details - DevFolio</title>
+  <title>Tele Directory - DevFolio</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: #4e4e4e;
+      background: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #0078ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-weight: 700;
+      color: #1e1e1e;
+    }
+
+    header#header {
+      background: #000;
+      padding: 20px 0;
+      color: #fff;
+    }
+
+    .logo a {
+      color: #fff;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .navbar a {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .breadcrumbs {
+      background: #f7f7f7;
+      padding: 20px 0;
+    }
+
+    .breadcrumbs h2 {
+      font-size: 24px;
+    }
+
+    .portfolio-details,
+    #tele-directory {
+      padding: 40px 0;
+    }
+
+    .portfolio-info {
+      background: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .portfolio-info h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .portfolio-info ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .portfolio-info ul li {
+      padding: 5px 0;
+    }
+
+    footer#footer {
+      background: #0078ff;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #fff;
+    }
+
+    .table th {
+      background: #0078ff;
+      color: #fff;
+    }
+
+    .btn-primary {
+      background-color: #0078ff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      color: #fff;
+    }
+  </style>
 </head>
 
 <body>
@@ -34,18 +135,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#services">Services</a></li>
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li><a href="#">Dropdown 2</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#">About</a></li>
+          <li><a class="nav-link" href="#">Services</a></li>
+          <li><a class="nav-link" href="#">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span></a></li>
+          <li><a class="nav-link" href="#">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
     </div>
   </header>
@@ -54,99 +149,60 @@
   <section class="breadcrumbs mt-5">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
-        <h2>Portfolio Details</h2>
-        <ol>
-          <li><a href="index.html">Home</a></li>
-          <li>Portfolio Details</li>
+        <h2>Tele Directory</h2>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Tele Directory</li>
         </ol>
       </div>
     </div>
   </section>
 
-  <!-- ======= Portfolio Details Section ======= -->
-  <section id="portfolio-details" class="portfolio-details">
+  <!-- ======= Tele Directory Section ======= -->
+  <section id="tele-directory" class="portfolio-details">
     <div class="container">
       <div class="row gy-4">
-
         <div class="col-lg-8">
-          <div class="portfolio-details-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/watch.jpg" alt="" class="img-fluid">
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
+          <h3>Employee Contact Information</h3>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Department</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Renuka Mandapalli</td>
+                  <td>Front-end</td>
+                  <td>renuka@example.com</td>
+                  <td>9876543210</td>
+                </tr>
+                <tr>
+                  <td>Rahul Mehta</td>
+                  <td>Back-end</td>
+                  <td>rahul@example.com</td>
+                  <td>9123456780</td>
+                </tr>
+                <tr>
+                  <td>Sneha Reddy</td>
+                  <td>HR</td>
+                  <td>sneha@example.com</td>
+                  <td>9988776655</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
         <div class="col-lg-4">
           <div class="portfolio-info">
-            <h3>Project information</h3>
+            <h3>Directory Information</h3>
             <ul>
-              <li><strong>Category</strong>: Web design</li>
-              <li><strong>Client</strong>: ASU Company</li>
-              <li><strong>Project date</strong>: 01 March, 2020</li>
-              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-            </ul>
-            <a href="https://www.example.com" class="btn btn-primary mt-3">Visit Website</a>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row mt-4">
-        <div class="col-lg-12">
-          <h3>This is an example of portfolio details</h3>
-          <p>
-            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
-            Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim.
-          </p>
-          <p>
-            Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et.
-            Praesentium error dolores rerum minus sequi quia veritatis eum.
-          </p>
-
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-              quorum velit fore sunt eram velit aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonial-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-          </div>
-
-          <p>
-            Impedit ipsum quae et aliquid dolorem ut voluptatem quasi. Perspiciatis occaecati earum et magnam autem.
-          </p>
-          <p>
-            Sunt voluptatem sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>DevFolio</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+              <li><strong>Tool Name</strong>: Tele Directory</li>
+              <li><strong>Usage</strong>: Internal Employee Contacts</li>
+              <li><strong>Maintained By</strong>: HR Department</li>
+              <li><strong>Last Updated</st
