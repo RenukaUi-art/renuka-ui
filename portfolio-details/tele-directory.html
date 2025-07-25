@@ -6,274 +6,155 @@
   <title>Portfolio Details - DevFolio</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: "Open Sans", sans-serif;
-      color: #4e4e4e;
+      font-family: 'Open Sans', sans-serif;
       background: #fff;
-      margin: 0;
-      padding: 0;
+      color: #333;
     }
 
-    a {
-      color: #0078ff;
-      text-decoration: none;
+    .navbar {
+      background-color: #000;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
-
-    h1, h2, h3, h4 {
-      font-weight: 700;
-      color: #1e1e1e;
-    }
-
-    header#header {
-      background: #000;
-      padding: 20px 0;
-      color: #fff;
-    }
-
-    .logo a {
-      color: #fff;
-      font-size: 28px;
+    .navbar-brand {
       font-weight: bold;
-    }
-
-    .navbar ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 20px;
-    }
-
-    .navbar a {
       color: #fff;
-      font-weight: 500;
     }
 
-    .breadcrumbs {
-      background: #f7f7f7;
-      padding: 20px 0;
+    .navbar-nav .nav-link {
+      color: #fff !important;
     }
 
     .portfolio-details {
       padding: 40px 0;
     }
 
-    .portfolio-info {
-      background: #f1f1f1;
+    .project-info {
+      background: #f5f5f5;
       padding: 20px;
       border-radius: 8px;
     }
 
-    .portfolio-info h3 {
-      font-size: 20px;
-      margin-bottom: 15px;
-    }
-
-    .portfolio-info ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .portfolio-info ul li {
-      padding: 5px 0;
-    }
-
-    .portfolio-description {
-      margin-top: 20px;
-    }
-
-    .testimonial-item {
-      background: #f9f9f9;
+    .testimonial {
+      background: #f8f9fa;
       padding: 20px;
-      border-left: 4px solid #0078ff;
       margin-top: 20px;
+      border-left: 3px solid #007bff;
     }
 
-    .testimonial-item p {
-      font-style: italic;
-      color: #555;
-    }
-
-    .testimonial-item img {
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      margin-right: 15px;
-    }
-
-    footer#footer {
-      background: #0078ff;
-      color: #fff;
+    footer {
+      background: #007bff;
+      color: white;
       text-align: center;
       padding: 20px 0;
-      font-size: 14px;
+      margin-top: 40px;
     }
 
-    .carousel-inner img {
+    .carousel-item img {
       width: 100%;
-      border-radius: 8px;
-      height: auto;
+      border-radius: 10px;
+    }
+
+    .testimonial img {
+      width: 50px;
+      border-radius: 50%;
     }
 
     .btn-primary {
-      background-color: #0078ff;
+      background-color: #007bff;
       border: none;
-      padding: 8px 16px;
-      border-radius: 4px;
-      color: #fff;
+    }
+
+    .breadcrumb {
+      background-color: transparent;
+      padding-left: 0;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="index.html">DevFolio</a></h1>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="#">About</a></li>
-          <li><a class="nav-link" href="#">Services</a></li>
-          <li><a class="nav-link" href="#">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span></a></li>
-          <li><a class="nav-link" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <!-- Top Title -->
+  <div class="container mt-3">
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item active">Portfolio Details</li>
+      </ol>
+    </nav>
+    <h4 class="fw-bold">Portfolio Details</h4>
+  </div>
 
-  <!-- ======= Breadcrumbs ======= -->
-  <section class="breadcrumbs mt-5 pt-5">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <h2>Portfolio Details</h2>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active">Portfolio Details</li>
-        </ol>
+  <!-- Image Carousel -->
+  <div class="container mt-4">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/800x400/ff4444" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/800x400/00C851" class="d-block w-100" alt="...">
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
     </div>
-  </section>
+  </div>
 
-  <!-- ======= Portfolio Details Section ======= -->
-  <section id="portfolio-details" class="portfolio-details">
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-8">
-          <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../static/img/blog-1.jpg" class="d-block w-100" alt="Image 1">
-              </div>
-              <div class="carousel-item">
-                <img src="../static/img/blog-1.jpg" class="d-block w-100" alt="Image 2">
-              </div>
-              <div class="carousel-item">
-                <img src="../static/img/blog-1.jpg" class="d-block w-100" alt="Duplicate Image">
-              </div>
-              <div class="carousel-item">
-                <img src="../static/img/blog-1.jpg" class="d-block w-100" alt="Duplicate Image 2">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
-          </div>
+  <!-- Content Section with Project Info Right -->
+  <div class="container portfolio-details mt-5">
+    <div class="row">
+      <!-- Left Column (Text content) -->
+      <div class="col-lg-8">
+        <h5 class="fw-bold">This is an example of portfolio details</h5>
+        <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.</p>
+        <p>Amet consequatur qui dolore veniam voluptatem sit. Non aspernatur atque natus ut cum nam et.</p>
 
-          <!-- ✅ Grid layout for description and right card -->
-          <div class="row mt-4">
-            <!-- Description column -->
-            <div class="col-md-8">
-              <div class="portfolio-description">
-                <h3>This is an example of portfolio details</h3>
-                <p>
-                  Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
-                  Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim.
-                </p>
-                <p>
-                  Amet consequatur qui dolore veniam voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error
-                  dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque necessitatibus molestiae laboriosam.
-                </p>
-
-                <div class="testimonial-item d-flex align-items-center">
-                  <img src="assets/img/testimonials/testimonial-2.jpg" alt="Sara Wilson">
-                  <div>
-                    <p>
-                      <i class="bi bi-quote quote-icon-left"></i>
-                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                      quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                      <i class="bi bi-quote quote-icon-right"></i>
-                    </p>
-                    <strong>Sara Wilson</strong>, Designer
-                  </div>
-                  <p>
-                    Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
-                    Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim.
-                  </p>
-                  <p>
-                    Amet consequatur qui dolore veniam voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error
-                    dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque necessitatibus molestiae laboriosam.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Right card column -->
-            <div class="col-md-4">
-              <div class="card shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title">Additional Info</h5>
-                  <p class="card-text">
-                    This is a side card added to the right of the portfolio description. You can include links, stats, or any other relevant info here.
-                  </p>
-                  <a href="#" class="btn btn-primary">Learn More</a>
-                </div>
-              </div>
-            </div>
+        <!-- Testimonial -->
+        <div class="testimonial d-flex align-items-start gap-3">
+          <img src="https://via.placeholder.com/50" alt="">
+          <div>
+            <p><i>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua nostrud fugiat irure amet legam anim culpa.</i></p>
+            <strong>Sara Wilson</strong>, Designer
           </div>
         </div>
 
-        <!-- Side project info -->
-        <div class="col-lg-4">
-          <div class="portfolio-info">
-            <h3>Project information</h3>
-            <ul>
-              <li><strong>Category</strong>: Web design</li>
-              <li><strong>Client</strong>: ASU Company</li>
-              <li><strong>Project date</strong>: 01 March, 2020</li>
-              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-            </ul>
-            <a href="#" class="btn btn-primary mt-3">Visit Website</a>
-          </div>
+        <p class="mt-3">Enim ipsum magna. Sunt voluptate sapiente facilis quo odio aut ipsum repellat debitis.</p>
+      </div>
+
+      <!-- Right Column (Project Info) -->
+      <div class="col-lg-4">
+        <div class="project-info">
+          <h6 class="fw-bold">Project information</h6>
+          <p><strong>Category:</strong> Web design</p>
+          <p><strong>Client:</strong> ASU Company</p>
+          <p><strong>Project date:</strong> 01 March, 2020</p>
+          <p><strong>Project URL:</strong> <a href="https://www.example.com" target="_blank">www.example.com</a></p>
+          <a class="btn btn-primary mt-2" href="#">Visit Website</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <!-- Footer -->
+  <footer>
     <div class="container">
-      &copy; Copyright <strong>DevFolio</strong>. All Rights Reserved
-      <br>
-      Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <p>© Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+      <p>Designed by BootstrapMade</p>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
