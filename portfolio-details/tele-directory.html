@@ -27,10 +27,7 @@
       text-decoration: underline;
     }
 
-    h1,
-    h2,
-    h3,
-    h4 {
+    h1, h2, h3, h4 {
       font-weight: 700;
       color: #1e1e1e;
     }
@@ -196,32 +193,12 @@
             </button>
           </div>
 
-          <!-- ✅ Wrap description + card in a flex container -->
-          <div class="d-flex flex-wrap gap-4 mt-4">
-
-            <!-- Existing portfolio description -->
-            <div class="portfolio-description" style="flex: 1 1 60%;">
-              <h3>This is an example of portfolio details</h3>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
-                Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim.
-              </p>
-              <p>
-                Amet consequatur qui dolore veniam voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error
-                dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque necessitatibus molestiae laboriosam.
-              </p>
-
-              <div class="testimonial-item d-flex align-items-center">
-                <img src="assets/img/testimonials/testimonial-2.jpg" alt="Sara Wilson">
-                <div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                    quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <strong>Sara Wilson</strong>, Designer
-                </div>
+          <!-- ✅ Grid layout for description and right card -->
+          <div class="row mt-4">
+            <!-- Description column -->
+            <div class="col-md-8">
+              <div class="portfolio-description">
+                <h3>This is an example of portfolio details</h3>
                 <p>
                   Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
                   Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim.
@@ -230,23 +207,46 @@
                   Amet consequatur qui dolore veniam voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error
                   dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque necessitatibus molestiae laboriosam.
                 </p>
+
+                <div class="testimonial-item d-flex align-items-center">
+                  <img src="assets/img/testimonials/testimonial-2.jpg" alt="Sara Wilson">
+                  <div>
+                    <p>
+                      <i class="bi bi-quote quote-icon-left"></i>
+                      Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                      quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                      <i class="bi bi-quote quote-icon-right"></i>
+                    </p>
+                    <strong>Sara Wilson</strong>, Designer
+                  </div>
+                  <p>
+                    Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+                    Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim.
+                  </p>
+                  <p>
+                    Amet consequatur qui dolore veniam voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error
+                    dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque necessitatibus molestiae laboriosam.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <!-- ✅ New card on the right side -->
-            <div class="card shadow-sm" style="flex: 1 1 35%; min-width: 280px;">
-              <div class="card-body">
-                <h5 class="card-title">Additional Info</h5>
-                <p class="card-text">
-                  This is a side card added to the right of the portfolio description. You can include links, stats, or any other relevant info here.
-                </p>
-                <a href="#" class="btn btn-primary">Learn More</a>
+            <!-- Right card column -->
+            <div class="col-md-4">
+              <div class="card shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Additional Info</h5>
+                  <p class="card-text">
+                    This is a side card added to the right of the portfolio description. You can include links, stats, or any other relevant info here.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
 
+        <!-- Side project info -->
         <div class="col-lg-4">
           <div class="portfolio-info">
             <h3>Project information</h3>
