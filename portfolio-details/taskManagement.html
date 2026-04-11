@@ -17,13 +17,10 @@ body {
   color: #fff;
 }
 
-/* NAVBAR FIXED */
+/* NAVBAR */
 .navbar {
   background: rgba(0,0,0,0.7);
   backdrop-filter: blur(12px);
-}
-.navbar-brand {
-  font-weight: bold;
 }
 .nav-link {
   color: #fff !important;
@@ -45,15 +42,15 @@ body {
 
 /* GLASS CARD */
 .glass {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.08);
   backdrop-filter: blur(15px);
   border-radius: 20px;
-  padding: 30px;
+  padding: 25px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-  transition: 0.4s;
+  transition: 0.3s;
 }
 .glass:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 }
 
 /* BUTTON */
@@ -68,28 +65,16 @@ body {
   transform: translateY(-3px);
 }
 
-/* CAROUSEL */
-.carousel img {
-  border-radius: 15px;
-  transition: 0.5s;
-}
-.carousel img:hover {
-  transform: scale(1.05);
-}
-
-/* IMAGE GRID */
-.project-img {
-  border-radius: 15px;
-  overflow: hidden;
-}
+/* IMAGE */
 .project-img img {
+  border-radius: 15px;
   transition: 0.5s;
 }
 .project-img:hover img {
   transform: scale(1.08);
 }
 
-/* FLOAT */
+/* FLOAT ANIMATION */
 @keyframes float {
   0% {transform: translateY(0);}
   50% {transform: translateY(-10px);}
@@ -109,10 +94,6 @@ body {
   z-index: 9999;
 }
 
-.section-title {
-  margin-top: 30px;
-}
-
 </style>
 </head>
 
@@ -120,10 +101,10 @@ body {
 
 <div id="progress-bar"></div>
 
-<!-- ✅ FIXED NAVBAR -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 <div class="container">
-<a class="navbar-brand" href="../index.html">Renuka</a>
+<a class="navbar-brand fw-bold" href="../index.html">Renuka</a>
 
 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
 <span class="navbar-toggler-icon"></span>
@@ -131,11 +112,11 @@ body {
 
 <div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="../index.html#home">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="../index.html#about">About Us</a></li>
-<li class="nav-item"><a class="nav-link" href="../index.html#services">Services</a></li>
-<li class="nav-item"><a class="nav-link" href="../index.html#work">Portfolio</a></li>
-<li class="nav-item"><a class="nav-link" href="../index.html#contactus">Contact</a></li>
+<li><a class="nav-link" href="../index.html#home">Home</a></li>
+<li><a class="nav-link" href="../index.html#about">About Us</a></li>
+<li><a class="nav-link" href="../index.html#services">Services</a></li>
+<li><a class="nav-link" href="../index.html#work">Portfolio</a></li>
+<li><a class="nav-link" href="../index.html#contactus">Contact</a></li>
 </ul>
 </div>
 </div>
@@ -143,9 +124,12 @@ body {
 
 <div class="container mt-5 pt-5">
 
-<h2 class="fw-bold text-center mb-3" data-aos="fade-up">🚀 Task Management System</h2>
+<!-- TITLE -->
+<h2 class="fw-bold text-center mb-2" data-aos="fade-up">
+⭐ Task Management Web Application
+</h2>
 
-<p class="text-center" data-aos="fade-up">
+<p class="text-center mb-4" data-aos="fade-up">
 Full-stack platform to manage projects, tasks, and workflows efficiently.
 </p>
 
@@ -154,64 +138,119 @@ Full-stack platform to manage projects, tasks, and workflows efficiently.
 <a href="https://github.com/RenukaUi-art/renuka-ui" target="_blank" class="btn btn-light">GitHub</a>
 </div>
 
-<!-- ✅ FIXED CAROUSEL WITH BUTTONS -->
-<div id="carouselTask" class="carousel slide mb-5 float" data-bs-ride="carousel">
+<!-- CAROUSEL -->
+<div id="carouselTask" class="carousel slide mb-5 float" data-bs-ride="carousel" data-aos="zoom-in">
 <div class="carousel-inner">
-<div class="carousel-item active"><img src="../static/img/Task-1.png" class="d-block w-100"></div>
-<div class="carousel-item"><img src="../static/img/Task-2.png" class="d-block w-100"></div>
-<div class="carousel-item"><img src="../static/img/Task-3.png" class="d-block w-100"></div>
+<div class="carousel-item active">
+<img src="../static/img/Task-1.png" class="d-block w-100">
+</div>
+<div class="carousel-item">
+<img src="../static/img/Task-2.png" class="d-block w-100">
+</div>
+<div class="carousel-item">
+<img src="../static/img/Task-3.png" class="d-block w-100">
+</div>
 </div>
 
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselTask" data-bs-slide="prev">
+<button class="carousel-control-prev" data-bs-target="#carouselTask" data-bs-slide="prev">
 <span class="carousel-control-prev-icon"></span>
 </button>
 
-<button class="carousel-control-next" type="button" data-bs-target="#carouselTask" data-bs-slide="next">
+<button class="carousel-control-next" data-bs-target="#carouselTask" data-bs-slide="next">
 <span class="carousel-control-next-icon"></span>
 </button>
 </div>
 
-<!-- ✅ IMAGE SHOWCASE (IMPORTANT FIX) -->
-<h4 class="text-center mb-4" data-aos="fade-up">✨ Key UI Screens</h4>
+<!-- IMAGE SHOWCASE -->
+<h4 class="text-center mb-4" data-aos="fade-up">✨ Key Screens</h4>
 
 <div class="row g-4 mb-5">
 <div class="col-md-6" data-aos="zoom-in">
-<div class="glass">
-<div class="project-img">
+<div class="glass project-img">
 <img src="../static/img/Task-1.png" class="img-fluid">
-</div>
 <h6 class="mt-2">Unified Dashboard</h6>
 </div>
 </div>
 
 <div class="col-md-6" data-aos="zoom-in">
-<div class="glass">
-<div class="project-img">
+<div class="glass project-img">
 <img src="../static/img/Task-2.png" class="img-fluid">
-</div>
 <h6 class="mt-2">Task Filtering</h6>
 </div>
 </div>
 </div>
 
-<!-- CONTENT -->
-<div class="glass" data-aos="fade-up">
+<!-- MAIN CONTENT -->
+<div class="row g-4">
 
-<h5 class="section-title">🔥 Business Problem</h5>
-<p>Fragmented systems made task tracking inefficient and time-consuming.</p>
+<div class="col-lg-8">
+<div class="glass">
 
-<h5 class="section-title">💡 Solution</h5>
-<p>Unified dashboard with real-time API updates and streamlined UI.</p>
+<h4 class="fw-bold mb-3">🚀 Task Management Web Application</h4>
 
-<h5 class="section-title">📈 Impact</h5>
+<p><strong>👨‍💻 My Role:</strong> Software Developer</p>
+
+<p><strong>🎯 Goal:</strong> Developed a web-based task management system to help teams organize, assign, and track tasks efficiently using React.js and REST APIs.</p>
+
+<p><strong>🌍 Scalability:</strong> Expanded across multiple industries with customization support.</p>
+
+<h5 class="mt-4">🔥 The Challenge</h5>
+<p>Fragmented systems caused inefficiency and user frustration.</p>
+
+<h5 class="mt-4">💡 Solution</h5>
+<ul>
+<li>Unified dashboard</li>
+<li>Status filters</li>
+<li>Improved UX</li>
+</ul>
+
+<div class="glass mt-4">
+
+<h6>✨ Highlights</h6>
+<ul>
+<li>Unified dashboard</li>
+<li>Task detail view</li>
+<li>Status filters</li>
+</ul>
+
+<h6 class="mt-3">🎨 Design</h6>
+<ul>
+<li>User research</li>
+<li>Clean UI</li>
+<li>Simple navigation</li>
+</ul>
+
+</div>
+
+<h5 class="mt-4">📈 Outcomes</h5>
 <ul>
 <li>Improved productivity</li>
 <li>Reduced navigation time</li>
-<li>Better team collaboration</li>
 </ul>
 
-<h5 class="section-title">⚙️ Tech</h5>
-<p>React, Node.js, Express, MySQL</p>
+</div>
+</div>
+
+<!-- RIGHT -->
+<div class="col-lg-4">
+<div class="glass">
+
+<h5 class="fw-bold mb-3">📊 Project Info</h5>
+
+<p><strong>Category:</strong> Productivity Tool</p>
+<p><strong>Client:</strong> Rasapoorna Foods Pvt. Ltd</p>
+<p><strong>Date:</strong> Jan 2025</p>
+<p><strong>Platform:</strong> Web Dashboard</p>
+
+<p><strong>Tech:</strong><br>
+React.js<br>
+Node.js<br>
+Express.js<br>
+MySQL
+</p>
+
+</div>
+</div>
 
 </div>
 
